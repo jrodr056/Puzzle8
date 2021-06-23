@@ -100,7 +100,8 @@ class App extends Component {
             dimmensions={this.state.size}
             onCellPress={this.handleCellPress}
           />
-          <p>Rules: This is a puzzle 8 game, arrange the tiles in numerical order from 1 to x. <br/> The last tile(bottom-right) should be 0.</p>
+          <h1>Rules:</h1>
+          <p>Arrange the tiles in numerical order from 1 to x. Last tile should be 0.<br/> The 0 space counts as empty and is used to swap around with orthogonally adjacent tiles.</p>
           
 
       </React.Fragment>
