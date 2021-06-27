@@ -13,7 +13,7 @@ class gameboard extends Component {
             {
                 const tile = tiles[index];
                 columns.push(
-                    <td id={tile.id} width="50em" height="50em">
+                    <td id={tile.id} width="100em" height="100em">
                             <GameCell 
                                 key={tile.id}
                                 value={tile.value}
