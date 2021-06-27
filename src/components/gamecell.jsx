@@ -12,7 +12,7 @@ class gamecell extends Component {
     render() {
         const {tile,value}=this.props;
         return (  
-            <button onClick={()=>this.props.onCellPress(tile)} className={this.buttonLook(value)} style={{outline:'none'},{boxShadow:'none'}}>{value}</button>
+            <button onClick={()=>this.props.onCellPress(tile)} className={this.buttonLook(value)} style={{outline:'none',boxShadow:'none'}}>{value}</button>
         );
     }
 }

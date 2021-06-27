@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { toast, ToastContainer } from 'react-toastify';
 import GameBoard from './components/gameboard';
 import NavBar from './components/navbar'
 
@@ -7,6 +8,7 @@ class App extends Component {
     size:0,
     tiles:[],
     moveCounter:0,
+    disable:false,
   };
   constructor(props){
     super(props);
@@ -16,6 +18,7 @@ class App extends Component {
       tiles:newBoard,
       size:boardSize,
       moveCounter:0,
+      disable:false
     }
   }
 
@@ -50,7 +53,8 @@ class App extends Component {
       this.setState({
           moveCounter:resetMove,
           tiles:newBoard,
-          size:boardSize
+          size:boardSize,
+          disable:false,
       });
   }
 
@@ -88,14 +92,25 @@ class App extends Component {
             break;
         }
       }
-     if(finished){console.log("finished")}
-  };
+     if(!finished){return;}
+    var statement = "Finished in " + this.state.moveCounter.toString() + " moves!";
+    toast.success(statement);
+    this.setState({disable:true})
+    }
 
   render() { 
     return ( 
       <React.Fragment>
         <NavBar moves={this.state.moveCounter} onReset={this.handleReset}/>
+          <ToastContainer
+            position="top-center"
+            autoClose={12000}
+            hideProgressBar={false}
+            closeOnClick
+            draggable={false}
+          />
           <GameBoard
+            disable={this.state.disable}
             tiles={this.state.tiles}
             dimmensions={this.state.size}
             onCellPress={this.handleCellPress}

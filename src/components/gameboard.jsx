@@ -3,7 +3,7 @@ import GameCell from './gamecell';
 class gameboard extends Component {
 
     render() { 
-        const {dimmensions,tiles,onCellPress} = this.props;
+        const {dimmensions,tiles,onCellPress,disable} = this.props;
         const rows = [];
         let index = 0;
         for (let x = 0; x<dimmensions; x++)
@@ -29,7 +29,7 @@ class gameboard extends Component {
         }
         
         return( 
-            <div>
+            <div style={disable ? {pointerEvents:"none",opacity:"0.4"} : {} }>
                 
                 <table className="mx-auto mt-2" cellSpacing="0" cellPadding="0">
                     <tbody>
