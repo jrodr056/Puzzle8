@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Puzzle8/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/Puzzle8/static/js/main.f3a16344.chunk.js",
+    "main.js.map": "/Puzzle8/static/js/main.f3a16344.chunk.js.map",
+    "runtime-main.js": "/Puzzle8/static/js/runtime-main.f0956121.js",
+    "runtime-main.js.map": "/Puzzle8/static/js/runtime-main.f0956121.js.map",
+    "static/css/2.9fe85666.chunk.css": "/Puzzle8/static/css/2.9fe85666.chunk.css",
+    "static/js/2.e08baa4d.chunk.js": "/Puzzle8/static/js/2.e08baa4d.chunk.js",
+    "static/js/2.e08baa4d.chunk.js.map": "/Puzzle8/static/js/2.e08baa4d.chunk.js.map",
+    "index.html": "/Puzzle8/index.html",
+    "static/css/2.9fe85666.chunk.css.map": "/Puzzle8/static/css/2.9fe85666.chunk.css.map",
+    "static/css/main.6dea0f05.chunk.css.map": "/Puzzle8/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.e08baa4d.chunk.js.LICENSE.txt": "/Puzzle8/static/js/2.e08baa4d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f0956121.js",
+    "static/css/2.9fe85666.chunk.css",
+    "static/js/2.e08baa4d.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.f3a16344.chunk.js"
+  ]
+}
